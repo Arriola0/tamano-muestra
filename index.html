@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Formulas - Tamaño de la muestra.</title>
+</head>
+<body>
+    
+
+    <h1>Formulas para determinar el Tamaño de la muestra.</h1>
+
+    <section class="formulaUno">
+        <h1>Formula No.1</h1>
+            <h3>Datos necesarios:</h3>
+                <p>E = error</p>
+                <p>Z = confianza</p>
+                <p>p = Probabilidad</p>
+                <p>q = No probabilidad</p>
+
+                <div>
+                    <h3>Formula:</h3>
+                    <p>n = (Z^2)*p*q / (E^2)</p>
+                </div>
+
+                <h1>Llenar datos.</h1>
+        <div class="inputs"><span>Valor de <b>E:</b></span><input type="number" id="E" class="input"></div>
+        <div class="inputs"><span>Valor <b>Z</b> o en <b>Tabla:</b></span><input type="number" id="Z" class="input"></div>
+        <div class="inputs"><span>Valor de <b>p:</b></span><input type="number" id="p" class="input"></div>
+        <div class="inputs"><span>Valor de <b>q:</b></span><input type="number" id="q" class="input"></div>
+        <input type="button" value="Enviar" id="btn">
+
+
+
+        <h1>Resultado:</h1>
+        <div id="espacioResultado"></div>
+
+    </section>
+
+
+
+
+
+
+
+    <section class="formulaDos">
+        <h1>Formula No.2</h1>
+        <h3>Datos necesarios:</h3>
+            <p>E = error</p>
+            <p>Z = confianza</p>
+            <p>p = Probabilidad</p>
+            <p>q = No probabilidad</p>
+
+            <div>
+                <h3>Formula:</h3>
+                <p>n = (Z^2)*q / (E^2)*p</p>
+            </div>
+
+            
+            <h1>Llenar datos, todo en decimal:</h1>
+            <div class="inputs"><span>Valor de <b>E:</b></span><input type="number" id="Eformula2" class="input"></div>
+            <div class="inputs"><span>Valor <b>Z</b> o en <b>Tabla:</b></span><input type="number" id="Zformula2" class="input"></div>
+            <div class="inputs"><span>Valor de <b>p:</b></span><input type="number" id="pformula2" class="input"></div>
+            <div class="inputs"><span>Valor de <b>q:</b></span><input type="number" id="qformula2" class="input"></div>
+            <input type="button" value="Enviar" id="btn2">
+    
+    
+    
+            <h1>Resultado:</h1>
+            <div id="espacioResultado2"></div>
+    </section>
+
+
+
+
+
+
+    <section class="formulaTres">
+        <h1>Formula No.3</h1>
+        <h3>Datos necesarios:</h3>
+            <p>E = error</p>
+            <p>Z = confianza</p>
+            <p>σ  = Desviacion Estandar</p>
+
+            <div>
+                <h3>Formula:</h3>
+                <p>n = (Z^2)*(σ^2)  / (E^2)</p>
+            </div>
+            
+
+
+
+            <h1>Llenar datos, numero del problema. Se trabaja con Quetzales.</h1>
+            <div class="inputs"><span>Valor de <b>E:</b></span><input type="number" id="Eformula3" class="input"></div>
+            <div class="inputs"><span>Valor <b>Z</b> o en <b>Tabla:</b></span><input type="number" id="Zformula3" class="input"></div>
+            <div class="inputs"><span>Valor de <b>σ :</b></span><input type="number" id="Oformula3" class="input"></div>
+            <input type="button" value="Enviar" id="btn3">
+
+
+            <h1>Resultado:</h1>
+            <div id="espacioResultado3"></div>
+    </section>
+
+
+
+
+
+
+    <section class="formulaCuatro">
+        <h1>Formula No.4</h1>
+        <h3>Datos necesarios:</h3>
+            <p>N = poblacion</p>
+            <p>D = error</p>
+
+            <div>
+                <h3>Formula:</h3>
+                <p>n = N  / N*(D^2)+1</p>
+            </div>
+
+
+            <h1>Llenar datos.</h1>
+            <div class="inputs"><span>Valor de <b>N:</b></span><input type="number" id="Nformula4" class="input"></div>
+            <div class="inputs"><span>Valor <b>D</b></b></span><input type="number" id="Dformula4" class="input"></div>
+            <input type="button" value="Enviar" id="btn4">
+
+
+            <h1>Resultado:</h1>
+            <div id="espacioResultado4"></div>
+
+    </section>
+
+
+
+
+
+    <section class="formulaCinco">
+
+        <h1>Formula No.5</h1>
+        <h3>Datos necesarios:</h3>
+        <p>N = poblacion</p>
+        <p>Z = confianza</p>
+        <p>D = error</p>
+        <p>p = Probabilidad</p>
+        <p>q = No probabilidad</p>
+
+        <div>
+            <h3>Formula:</h3>
+            <p>n = N*(Z^2)*p*q  / (D^2)*(N-1) + (Z^2)*p*q</p>
+        </div>
+
+        <h1>Llenar datos:</h1>
+            <div class="inputs"><span>Valor de <b>N:</b></span><input type="number" id="Nformula5" class="input"></div>
+            <div class="inputs"><span>Valor <b>Z</b> o en <b>Tabla:</b></span><input type="number" id="Zformula5" class="input"></div>
+            <div class="inputs"><span>Valor de <b>D:</b></span><input type="number" id="Dformula5" class="input"></div>
+            <div class="inputs"><span>Valor de <b>p:</b></span><input type="number" id="pformula5" class="input"></div>
+            <div class="inputs"><span>Valor de <b>q:</b></span><input type="number" id="qformula5" class="input"></div>
+            <input type="button" value="Enviar" id="btn5">
+    
+    
+    
+            <h1>Resultado:</h1>
+            <div id="espacioResultado5"></div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <section class="formulaSeis">
+
+        <h1>Formula No.6</h1>
+        <h3>Datos necesarios:</h3>
+        <p>N = poblacion</p>
+        <p>Z = confianza</p>
+        <p>E = error</p>
+        <p>σ  = Desviacion Estandar</p>
+
+        <div>
+            <h3>Formula:</h3>
+            <p>n = N*(Z^2)*(σ^2)  / (Z^2)*(σ^2) + (E^2)*(N-1)</p>
+        </div>
+
+
+        <h1>Llenar datos:</h1>
+        <div class="inputs"><span>Valor de <b>N:</b></span><input type="number" id="Nformula6" class="input"></div>
+        <div class="inputs"><span>Valor <b>Z</b> o en <b>Tabla:</b></span><input type="number" id="Zformula6" class="input"></div>
+        <div class="inputs"><span>Valor de <b>E:</b></span><input type="number" id="Eformula6" class="input"></div>
+        <div class="inputs"><span>Valor de <b>σ :</b></span><input type="number" id="Oformula6" class="input"></div>
+        <input type="button" value="Enviar" id="btn6">
+
+
+
+        <h1>Resultado:</h1>
+        <div id="espacioResultado6"></div>
+
+
+    </section>
+
+
+
+
+    <section class="formulaSiete">
+
+        <h1>Formula No.7</h1>
+        <h3>Datos necesarios:</h3>
+            <p>N = poblacion</p>
+
+            <div>
+                <h3>Formula:</h3>
+                <p>n = √N</p>
+            </div>
+
+            <h1>Llenar datos.</h1>
+            <div class="inputs"><span>Valor de <b>N:</b></span><input type="number" id="Nformula7" class="input"></div>
+            <input type="button" value="Enviar" id="btn7">
+
+
+            <h1>Resultado:</h1>
+            <div id="espacioResultado7"></div>
+
+    </section>
+
+
+
+
+
+
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
